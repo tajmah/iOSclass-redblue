@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10109" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxx-St-fut">
+                                <rect key="frame" x="1" y="329" width="126" height="30"/>
+                                <state key="normal" title="Hide Red"/>
+                                <connections>
+                                    <action selector="HideRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tGT-bz-fhF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X12-O8-Zea">
+                                <rect key="frame" x="210" y="329" width="85" height="30"/>
+                                <state key="normal" title="Hide Blue"/>
+                                <connections>
+                                    <action selector="HideBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ln-6O-rkF"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blueballoon" highlightedImage="blueballoon" translatesAutoresizingMaskIntoConstraints="NO" id="JfN-4O-imo">
+                                <rect key="frame" x="199" y="51" width="107" height="94"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redsballoon" translatesAutoresizingMaskIntoConstraints="NO" id="EgJ-jZ-gKb">
+                                <rect key="frame" x="12" y="48" width="105" height="97"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKM-Q7-OIx">
+                                <rect key="frame" x="6" y="329" width="117" height="30"/>
+                                <state key="normal" title="Show Red"/>
+                                <connections>
+                                    <action selector="ShowR:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lyX-Dp-qRW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mX-yK-WI8">
+                                <rect key="frame" x="214" y="329" width="76" height="30"/>
+                                <state key="normal" title="Show Blue"/>
+                                <connections>
+                                    <action selector="ShowB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pjg-65-yWI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="HBbutton" destination="X12-O8-Zea" id="VSS-Yn-Tjk"/>
+                        <outlet property="HRbutton" destination="cxx-St-fut" id="ptR-Ta-VbI"/>
+                        <outlet property="ShowBlue" destination="5mX-yK-WI8" id="f2B-eN-Dik"/>
+                        <outlet property="ShowRed" destination="QKM-Q7-OIx" id="TAI-jQ-0cZ"/>
+                        <outlet property="blueB" destination="JfN-4O-imo" id="f2F-o3-SG5"/>
+                        <outlet property="redB" destination="EgJ-jZ-gKb" id="fh8-i5-GIQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="354"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blueballoon" width="800" height="800"/>
+        <image name="redsballoon" width="350" height="350"/>
+    </resources>
+</document>
